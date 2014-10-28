@@ -1,0 +1,18 @@
+﻿.main-title{display: inline-block;background: rgba(255, 254, 255, 0.6);}
+.hr{border-top:solid 1px black !important;}
+
+
+/*Couleurs*/
+.bg-danger{background:#a94442;}
+.text-white{color:white;}
+.text-black{color:black;}
+
+/*Padding*/
+.p-5{padding:5px;}
+.p-10{padding:10px;}
+.p-20{padding:20px;}
+
+/*Margin*/
+.m-5{margin:5px;}
+.m-10{margin:10px;}
+.m-20{margin:20px;}
