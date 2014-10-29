@@ -11,7 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- CSS Perso -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet"/>
+    <link href="css/theme.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
 
     <!-- Fonts Perso -->
