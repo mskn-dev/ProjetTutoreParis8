@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> interface graphique utilisateur et APIs</title>
+
+    <%---------------------------------------------------------------  CSS ----------------------------------------------------%>
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- CSS Perso -->
+        <link href="css/theme.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+        <!-- Fonts Perso -->
+        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
+   
+    
+     <%--------------------------------------------------- ------- JavasCript ----------------------------------------------------%>
+            <!-- jQuery Version 1.11.0 -->
+        <script src="js/jquery-1.11.0.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Two.js -->
+        <script src="js/two.js"></script>
+
+        <!-- Three.js -->
+        <script src="js/three.js"></script>
+        
+        <!-- Processing.js -->
+        <script src="js/processing.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentMain" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

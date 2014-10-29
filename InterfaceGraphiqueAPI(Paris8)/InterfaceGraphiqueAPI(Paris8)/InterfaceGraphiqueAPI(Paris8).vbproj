@@ -99,7 +99,13 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-1.11.0.js" />
+    <Content Include="js\processing.js" />
+    <Content Include="js\three.js" />
+    <Content Include="js\two.js" />
     <Content Include="Web.config" />
+    <Content Include="testTwo.aspx" />
+    <Content Include="testThree.aspx" />
+    <Content Include="testProcessing.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="index.aspx.designer.vb">
@@ -127,6 +133,34 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testTwo.aspx.designer.vb">
+      <DependentUpon>testTwo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testTwo.aspx.vb">
+      <DependentUpon>testTwo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="testThree.aspx.designer.vb">
+      <DependentUpon>testThree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testThree.aspx.vb">
+      <DependentUpon>testThree.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="testProcessing.aspx.designer.vb">
+      <DependentUpon>testProcessing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testProcessing.aspx.vb">
+      <DependentUpon>testProcessing.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +214,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

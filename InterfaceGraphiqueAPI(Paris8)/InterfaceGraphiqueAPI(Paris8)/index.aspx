@@ -1,25 +1,9 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.index" %>
+﻿<%@ Page Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.index" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta charset="utf-8"/>
-    <title> interface graphique utilisateur et APIs</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
-
-    <!-- CSS Perso -->
-    <link href="css/theme.css" rel="stylesheet"/>
-    <link href="css/main.css" rel="stylesheet"/>
-
-    <!-- Fonts Perso -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-     <!-- Navigation -->
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentMain" runat="server">
+    <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -32,6 +16,15 @@
             </li>
             <li>
                 <a href="#about">Projet</a>
+            </li>
+            <li>
+                <a href="testTwo.aspx">TestTwo</a>
+            </li>
+            <li>
+                <a href="testThree.aspx">TestThree</a>
+            </li>
+            <li>
+                <a href="testProcessing.aspx">TestProcessing</a>
             </li>
             <li>
                 <a href="#services">Technologies</a>
@@ -160,12 +153,6 @@
         </div>
     </footer>
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script>
         // Closes the sidebar menu
@@ -197,5 +184,6 @@
             });
         });
     </script>
-</body>
-</html>
+
+</asp:Content>
+
