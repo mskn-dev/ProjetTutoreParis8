@@ -143,6 +143,7 @@ hr.small {
 /* Header */
 
 .header {
+    min-height:600px;
     display: table;
     position: relative;
     width: 100%;
