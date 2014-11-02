@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.index" %>
+﻿<%@ Page Title="index" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -16,6 +16,11 @@
             </li>
             <li>
                 <a href="#about">Projet</a>
+                <ul>
+                    <li>
+                        <a href="twitter.aspx">Twitter</a>
+                    </li>
+                </ul>
             </li>
             <li>
                 <a href="testTwo.aspx">TestTwo</a>
@@ -184,6 +189,5 @@
             });
         });
     </script>
-
 </asp:Content>
 

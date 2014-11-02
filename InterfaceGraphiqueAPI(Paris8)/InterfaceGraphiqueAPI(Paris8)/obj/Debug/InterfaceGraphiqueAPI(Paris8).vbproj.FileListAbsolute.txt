@@ -11,8 +11,16 @@ D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiq
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\InterfaceGraphiqueAPI(Paris8).dll
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\InterfaceGraphiqueAPI(Paris8).pdb
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\InterfaceGraphiqueAPI(Paris8).xml
+D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\LinqToTwitter.AspNet.dll
+D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\LinqToTwitterPcl.dll
+D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\System.Net.Http.Extensions.dll
+D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\System.Net.Http.Primitives.dll
+D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\System.Net.Http.Extensions.xml
+D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\System.Net.Http.Primitives.xml
+D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).vbproj.App.config
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI_Paris8_.Resources.resources
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).vbproj.GenerateResource.Cache
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).dll
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).xml
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).pdb
+D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).vbprojResolveAssemblyReference.cache
