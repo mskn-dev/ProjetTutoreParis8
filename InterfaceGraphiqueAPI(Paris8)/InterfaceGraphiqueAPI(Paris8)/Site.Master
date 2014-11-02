@@ -53,6 +53,7 @@
                 </li>
             </ul>
         </nav>
+    <div class="clear"></div>
     <%End If%>
     <asp:ContentPlaceHolder ID="ContentMain" runat="server">  
     </asp:ContentPlaceHolder>

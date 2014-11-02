@@ -2,6 +2,7 @@
     this.WebService;
     this.WebMethod;
     this.Method = "POST";
+    this.params = new Array();
     this.informationDebug = {};
 }
 
@@ -10,7 +11,7 @@ AjaxCall.prototype.URL_TWITTER = "WebService/Twitter.asmx";
 AjaxCall.prototype.AddParameter = function (parameterName, parameterValue) {
     this.params[parameterName] = parameterValue;
 }
-AjaxCall.prototype.AjoutInformationDebug = function (key,val) {
+AjaxCall.prototype.AjoutInformationDebug = function (key, val) {
     this.informationDebug[key] = val;
 }
 AjaxCall.prototype.GetDataString = function () {

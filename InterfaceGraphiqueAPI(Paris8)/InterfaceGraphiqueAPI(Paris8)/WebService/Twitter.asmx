@@ -1,1 +1,1 @@
-﻿<%@ WebService Language="vb" CodeBehind="Twitter.asmx.vb" Class="InterfaceGraphiqueAPI_Paris8_.Twitter" %>
+﻿<%@ WebService Language="VB" CodeBehind="~/App_Code/Twitter.vb" Class="Twitter" %>

@@ -1,5 +1,7 @@
 ﻿.main-title{display: inline-block;background: rgba(255, 254, 255, 0.6);}
 .hr{border-top:solid 1px black !important;}
+.clear{clear:both;}
+#twitter{margin-left:23%;}
 
 #sidebar-perso-wrapper {
     z-index: 1000;
