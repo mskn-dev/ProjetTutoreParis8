@@ -2,6 +2,8 @@
 .hr{border-top:solid 1px black !important;}
 .clear{clear:both;}
 #twitter{margin-left:23%;}
+.inlineB{display:inline-block !important;}
+.displayNone{display:none;}
 
 #sidebar-perso-wrapper {
     z-index: 1000;
@@ -22,6 +24,7 @@
 
 /*Couleurs*/
 .bg-danger{background:#a94442;}
+.bg-grey{background:rgb(224, 224, 224);}
 .text-white{color:white;}
 .text-black{color:black;}
 
@@ -31,6 +34,17 @@
 .p-20{padding:20px;}
 
 /*Margin*/
+.no-margin{margin:0px;}
 .m-5{margin:5px;}
 .m-10{margin:10px;}
 .m-20{margin:20px;}
+
+.mr-10{margin-right:10px;}
+.mr-20{margin-right:20px;}
+.mr-30{margin-right:30px;}
+.mr-40{margin-right:40px;}
+
+.mt-10{margin-top:10px;}
+.mt-20{margin-top:20px;}
+.mt-30{margin-top:30px;}
+.mt-40{margin-top:40px;}

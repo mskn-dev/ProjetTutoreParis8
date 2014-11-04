@@ -22,6 +22,13 @@ Public Class Tweets
     Public Property userName As String
     Public Property tweetText As String
     Public Property tweetDate As Date
+    Public Property UserImg As String
+    Public Property isRetweeted As Boolean
+    Public Property retweetCount As Integer
+    Public Property tweetLong As Decimal
+    Public Property tweetLat As Decimal
+
+
 End Class
 
 Public Class TwitterData
@@ -67,8 +74,13 @@ Public Class TwitterData
             For Each i In results(0).Statuses
                 Dim tweet As New Tweets
                 tweet.userName = i.User.Name
+                tweet.UserImg = i.User.ProfileImageUrl
                 tweet.tweetDate = i.CreatedAt
                 tweet.tweetText = i.Text
+                tweet.tweetLong = i.Coordinates.Longitude
+                tweet.tweetLat = i.Coordinates.Latitude
+
+
                 tousLesTweets.Add(tweet)
             Next
 

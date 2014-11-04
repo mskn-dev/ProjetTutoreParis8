@@ -23,6 +23,12 @@
                 </ul>
             </li>
             <li>
+                <a href="#services">Technologies</a>
+            </li>
+            <li>
+                <a href="#api">APIs</a>
+            </li>
+            <%--<li>
                 <a href="testTwo.aspx">TestTwo</a>
             </li>
             <li>
@@ -30,10 +36,7 @@
             </li>
             <li>
                 <a href="testProcessing.aspx">TestProcessing</a>
-            </li>
-            <li>
-                <a href="#services">Technologies</a>
-            </li>
+            </li>--%>
             <li>
                 <a href="#contact">Contact</a>
             </li>
@@ -75,7 +78,7 @@
                     <h2>Technologies utilisées</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-4 col-sm-7">
+                        <div class="col-md-3 col-sm-7">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -87,7 +90,7 @@
                                 <p>Html 5 et ses nombreuses innovations, notamment sa couche d'applications (Canvas, Geolocalisation, FullScreen, ...)</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-7">
+                        <div class="col-md-3 col-sm-7">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -99,7 +102,19 @@
                                 <p>Les feuilles de styles en cascade.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-7">
+                        <div class="col-md-3 col-sm-7">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-paint-brush fa-stack-1x text-black"></i>
+                            </span>
+                                <h4>
+                                    <strong>Bibliothéques JS</strong>
+                                </h4>
+                                <p>Plusieurs bibiliothèques JavaScript, permettent une interactivité avec l'utilisateur, et l'affichage des données sous forme de graphes, d'animation, selon plusieurs critères.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-7">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -120,10 +135,62 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- Map -->
-    <section id="contact" class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2620.4150132356062!2d2.3625490000000005!3d48.945583000000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6695017810e3d%3A0x95196baf9263e53a!2sUniversit%C3%A9+Paris+8+Vincennes-Saint-Denis!5e0!3m2!1sfr!2sfr!4v1414536716193" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+    <section id="api" class="services bg-grey text-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>APIs utilisées</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-7">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-white"></i>
+                                <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span>
+                                <h4>
+                                    <strong>Twitter</strong>
+                                </h4>
+                                <p>L'API twitter permet d'acceder à toutes les conversations se déroulant sur twitter. Les données des utilisateurs, leurs tweets, les replies, ...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-7">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-white"></i>
+                                <i class="fa fa-facebook-square fa-stack-1x"></i>
+                            </span>
+                                <h4>
+                                    <strong>Facebook</strong>
+                                </h4>
+                                <p>L'API Facebook, permet d'accéder aux données d'un compte en particulier, les amis, les posts, ...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-7">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-white"></i>
+                                <i class="fa fa-google fa-stack-1x"></i>
+                            </span>
+                                <h4>
+                                    <strong>Google Map</strong>
+                                </h4>
+                                <p>L'API google Map donnent des possibilités infinis : géolocalisation des tweets, des posts Facebook, affichage sur la carte des utilisateurs, .....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
     </section>
+    <!-- Map -->
+   <%-- <section id="contact" class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2620.4150132356062!2d2.3625490000000005!3d48.945583000000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6695017810e3d%3A0x95196baf9263e53a!2sUniversit%C3%A9+Paris+8+Vincennes-Saint-Denis!5e0!3m2!1sfr!2sfr!4v1414536716193" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+    </section>--%>
 
     <!-- Footer -->
     <footer>
