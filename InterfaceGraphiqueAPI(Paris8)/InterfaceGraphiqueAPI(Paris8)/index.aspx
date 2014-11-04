@@ -10,7 +10,7 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top">Projet Tuteuré</a>
+                <a href="#top">Projet Tuteuré </a>
             </li>
             <li>
                 <a href="#top">Acceuil</a>
