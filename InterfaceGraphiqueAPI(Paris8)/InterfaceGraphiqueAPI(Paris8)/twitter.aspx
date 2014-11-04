@@ -11,10 +11,12 @@
                 <div id="tweetHeader">
                     <span class="pull-left" id="userImg"><img src="#" alt="image user" /></span>
                     <b><span class="pull-left text-info" id="userTweet"></span></b>
-                    <span class="pull-left" id="dateTweet"></span>  
+                    <span class="pull-left" id="dateTweet"></span>
+                    <span class="pull-left" id="followers"></span>
+                    <span class="pull-right" id="geoloc"></span>    
                 </div>
-                <div class="clear"></div>
-                <div id="tweetBody"></div>
+                <div class="ml-20 col-md-9 p-10" id="tweetBody"></div>
+                <div class="pull-right col-md-12" id="tweetbuttons"></div>
             </div>
         </div>
     </div>

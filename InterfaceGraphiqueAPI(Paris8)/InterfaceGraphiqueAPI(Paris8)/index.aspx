@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="index" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript" src="js/index.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMain" runat="server">
     <!-- Navigation -->
@@ -15,12 +16,13 @@
                 <a href="#top">Acceuil</a>
             </li>
             <li>
-                <a href="#about">Projet</a>
-                <ul>
-                    <li>
-                        <a href="twitter.aspx">Twitter</a>
-                    </li>
-                </ul>
+                <a href="twitter.aspx"><i class="text-white fa fa-twitter"></i> Twitter API</a>
+            </li>
+            <li>
+                <a href="facebook.aspx"><i class="text-white fa fa-facebook-square"></i> Facebook API</a>
+            </li>
+            <li>
+                <a href="#about">Objectif du projet</a>
             </li>
             <li>
                 <a href="#services">Technologies</a>
@@ -49,7 +51,7 @@
             <div class="main-title p-10">
                 <h1> <b>Departement</b> <span class="text-danger">Hypermédia</span></h1>
                 <h2> <b>interface graphique utilisateur et APIs</b></h2>
-                <br>
+                <br/>
                 <%-- <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>--%>
             </div>
         </div>
@@ -76,7 +78,7 @@
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>Technologies utilisées</h2>
-                    <hr class="small">
+                    <hr class="small"/>
                     <div class="row">
                         <div class="col-md-3 col-sm-7">
                             <div class="service-item">
@@ -140,14 +142,14 @@
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>APIs utilisées</h2>
-                    <hr class="small">
+                    <hr class="small"/>
                     <div class="row">
                         <div class="col-md-4 col-sm-7">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-white"></i>
-                                <i class="fa fa-twitter fa-stack-1x"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x text-white"></i>
+                                    <i class="fa fa-twitter fa-stack-1x"></i>
+                                </span>
                                 <h4>
                                     <strong>Twitter</strong>
                                 </h4>
@@ -169,9 +171,9 @@
                         <div class="col-md-4 col-sm-7">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x text-white"></i>
-                                <i class="fa fa-google fa-stack-1x"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x text-white"></i>
+                                    <i class="fa fa-google fa-stack-1x"></i>
+                                </span>
                                 <h4>
                                     <strong>Google Map</strong>
                                 </h4>
@@ -199,14 +201,14 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>interface graphique utilisateur et APIs</strong>
                     </h4>
-                    <p>Mehdi AMASKANE<br>Zineb SLAOUI</p>
+                    <p>Mehdi AMASKANE<br/>Zineb SLAOUI</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:msknmehdi@gmail.com">msknmehdi@gmail.com</a>
                         </li>
                         <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:z.slaoui@gmail.com">z.slaoui@gmail.com</a>
                         </li>
                     </ul>
-                    <br>
+                    <br/>
                     <%--<ul class="list-inline">
                         <li>
                             <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
@@ -218,43 +220,11 @@
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li>
                     </ul>--%>
-                    <hr class="small">
+                    <hr class="small"/>
                     <p class="text-muted">Université Paris VIII 2014-2015</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-
-        // Scrolls to the selected menu item on the page
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-    </script>
 </asp:Content>
 

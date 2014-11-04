@@ -22,11 +22,12 @@ Public Class Tweets
     Public Property userName As String
     Public Property tweetText As String
     Public Property tweetDate As Date
-    Public Property UserImg As String
+    Public Property userImg As String
     Public Property isRetweeted As Boolean
     Public Property retweetCount As Integer
     Public Property tweetLong As Decimal
     Public Property tweetLat As Decimal
+    Public Property userFollowers As Integer
 
 
 End Class
@@ -62,6 +63,7 @@ Public Class TwitterData
 
             Dim results = (From search In Service.Search _
                 Where search.Type = LinqToTwitter.SearchType.Search _
+                And search.ResultType = LinqToTwitter.ResultType.Recent _
                 And search.Query = Tag And search.SearchLanguage = "fr" Select search).ToList
 
             'Dim tweets = (From tweet In results(0).Statuses _
@@ -79,7 +81,13 @@ Public Class TwitterData
                 tweet.tweetText = i.Text
                 tweet.tweetLong = i.Coordinates.Longitude
                 tweet.tweetLat = i.Coordinates.Latitude
-
+                tweet.retweetCount = i.RetweetCount
+                If tweet.retweetCount > 0 Then
+                    tweet.isRetweeted = True
+                Else
+                    tweet.isRetweeted = False
+                End If
+                tweet.userFollowers = i.User.FollowersCount
 
                 tousLesTweets.Add(tweet)
             Next

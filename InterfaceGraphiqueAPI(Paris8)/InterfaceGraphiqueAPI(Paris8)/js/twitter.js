@@ -62,8 +62,12 @@ function setTweetsOnPanel(obj) {
         $tweetModele.attr('id', 'tweet_' + tweets[i].userName);
         $($tweetModele).find("#tweetHeader").find("#dateTweet").append("&nbsp;" + tweets[i].tweetDate.toLocaleDateString() + " " + tweets[i].tweetDate.toLocaleTimeString());
         $($tweetModele).find("#tweetHeader").find("#userTweet").append("&nbsp;"+tweets[i].userName + " : ");
-        $($tweetModele).find("#tweetHeader").find("#userImg").find('img').attr('src', tweets[i].UserImg);
+        $($tweetModele).find("#tweetHeader").find("#userImg").find('img').attr('src', tweets[i].userImg);
+        $($tweetModele).find("#tweetHeader").find("#followers").append("<span class='text-success'>&nbsp;( Suivi par " + tweets[i].userFollowers + " personnes )</span>");
         $($tweetModele).find("#tweetBody").append(tweets[i].tweetText);
+        if (tweets[i].isRetweeted)
+            $($tweetModele).find("#tweetButtons").append("<i class='fa fa-retweet text-success'></i> <span class='text-success'>Retweeté " + tweets[i].retweetCount + " fois");
+        $($tweetModele).find("#tweetButtons").append("<span class='pull-right text-info' style='cursor:pointer;' onclick='tweetGeoloc(" + tweets[i].tweetLong + "," + tweets[i].tweetLat + ");'>Géolocaliser le tweet <i class='fa fa-globe'></i></span>");
         $($tweetModele).removeClass("displayNone");
         $($tweetPanel).append($tweetModele);
     }
