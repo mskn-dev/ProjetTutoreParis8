@@ -14,17 +14,9 @@ Contrôle head.
 Champ généré automatiquement.
 Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
 </remarks>
-</member><member name="F:InterfaceGraphiqueAPI_Paris8_.Site.form1">
+</member><member name="F:InterfaceGraphiqueAPI_Paris8_.Site.ContentMain">
 	<summary>
-Contrôle form1.
-</summary>
-	<remarks>
-Champ généré automatiquement.
-Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-</remarks>
-</member><member name="F:InterfaceGraphiqueAPI_Paris8_.Site.ContentPlaceHolder1">
-	<summary>
-Contrôle ContentPlaceHolder1.
+Contrôle ContentMain.
 </summary>
 	<remarks>
 Champ généré automatiquement.

@@ -1,10 +1,8 @@
 ﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.Site" %>
 
-<!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="content-type" content="application/x-javascript; charset=utf-8"/>
     <title> interface graphique utilisateur et APIs</title>
 
     <%---------------------------------------------------------------  CSS ----------------------------------------------------%>
@@ -20,26 +18,43 @@
    
     
      <%--------------------------------------------------- ------- JavasCript ----------------------------------------------------%>
-            <!-- jQuery Version 1.11.0 -->
-        <script src="js/jquery-1.11.0.js"></script>
+        <!-- jQuery Version 1.11.0 -->
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-
-        <!-- Two.js -->
-        <script src="js/two.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      
+        <%--<!-- Two.js -->
+        <script type="text/javascript" src="js/two.js"></script>
 
         <!-- Three.js -->
-        <script src="js/three.js"></script>
+        <script type="text/javascript" src="js/three.js"></script>
         
         <!-- Processing.js -->
-        <script src="js/processing.js"></script>
+        <script type="text/javascript" src="js/processing.js"></script>--%>
+        
+        <!-- AjaxCall.js -->
+        <script type="text/javascript" src="js/AjaxCall.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
+     <%If Page.Title <> "index" Then%>
+        <nav class="active" id="sidebar-perso-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#"><span class="text-white"><%=Page.Title%></span></a>
+                </li>
+                <li>
+                    <a href="index.aspx/#top"><span class="text-white">Acceuil</span></a>
+                </li>
+            </ul>
+        </nav>
+    <div class="clear"></div>
+    <%End If%>
     <asp:ContentPlaceHolder ID="ContentMain" runat="server">  
     </asp:ContentPlaceHolder>
+
 </body>
 </html>
