@@ -6,31 +6,7 @@ InterfaceGraphiqueAPI(Paris8)
 </name>
 </assembly>
 <members>
-<member name="F:InterfaceGraphiqueAPI_Paris8_.Site.head">
-	<summary>
-Contrôle head.
-</summary>
-	<remarks>
-Champ généré automatiquement.
-Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-</remarks>
-</member><member name="F:InterfaceGraphiqueAPI_Paris8_.Site.form1">
-	<summary>
-Contrôle form1.
-</summary>
-	<remarks>
-Champ généré automatiquement.
-Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-</remarks>
-</member><member name="F:InterfaceGraphiqueAPI_Paris8_.Site.ContentPlaceHolder1">
-	<summary>
-Contrôle ContentPlaceHolder1.
-</summary>
-	<remarks>
-Champ généré automatiquement.
-Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-</remarks>
-</member><member name="P:InterfaceGraphiqueAPI_Paris8_.My.MyWebExtension.Computer">
+<member name="P:InterfaceGraphiqueAPI_Paris8_.My.MyWebExtension.Computer">
 	<summary>
  Retourne les informations relatives à l'ordinateur hôte.
  </summary>
@@ -55,6 +31,30 @@ Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans 
  Module utilisé pour définir les propriétés qui sont disponibles dans My Namespace pour les projets Web.
  </summary>
 	<remarks></remarks>
+</member><member name="F:InterfaceGraphiqueAPI_Paris8_.Site.head">
+	<summary>
+Contrôle head.
+</summary>
+	<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member><member name="F:InterfaceGraphiqueAPI_Paris8_.Site.form1">
+	<summary>
+Contrôle form1.
+</summary>
+	<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member><member name="F:InterfaceGraphiqueAPI_Paris8_.Site.ContentPlaceHolder1">
+	<summary>
+Contrôle ContentPlaceHolder1.
+</summary>
+	<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
 </member>
 </members>
 </doc>
