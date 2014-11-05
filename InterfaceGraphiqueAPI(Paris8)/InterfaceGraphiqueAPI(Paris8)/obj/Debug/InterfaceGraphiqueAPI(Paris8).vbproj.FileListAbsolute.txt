@@ -16,12 +16,3 @@ D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiq
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).dll
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).xml
 D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).pdb
-C:\wamp\www\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\InterfaceGraphiqueAPI(Paris8).dll.config
-C:\wamp\www\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\InterfaceGraphiqueAPI(Paris8).dll
-C:\wamp\www\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\InterfaceGraphiqueAPI(Paris8).pdb
-C:\wamp\www\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\bin\InterfaceGraphiqueAPI(Paris8).xml
-C:\wamp\www\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI_Paris8_.Resources.resources
-C:\wamp\www\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).vbproj.GenerateResource.Cache
-C:\wamp\www\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).dll
-C:\wamp\www\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).xml
-C:\wamp\www\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\obj\Debug\InterfaceGraphiqueAPI(Paris8).pdb

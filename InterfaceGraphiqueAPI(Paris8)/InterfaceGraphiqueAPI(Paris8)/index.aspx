@@ -26,9 +26,6 @@
             <li>
                 <a href="testProcessing.aspx">TestProcessing</a>
             </li>
-             <li>
-                <a href="Facebook.aspx">Facebook</a>
-            </li>
             <li>
                 <a href="#services">Technologies</a>
             </li>
@@ -134,7 +131,7 @@
                     <ul class="list-unstyled">
                         <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:msknmehdi@gmail.com">msknmehdi@gmail.com</a>
                         </li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:z.slaoui91@gmail.com">z.slaoui91@gmail.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:z.slaoui@gmail.com">z.slaoui@gmail.com</a>
                         </li>
                     </ul>
                     <br>

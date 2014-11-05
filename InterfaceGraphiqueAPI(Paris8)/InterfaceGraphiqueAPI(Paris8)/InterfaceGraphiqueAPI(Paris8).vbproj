@@ -85,7 +85,6 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\main.css" />
     <Content Include="css\theme.css" />
-    <Content Include="Facebook.aspx" />
     <Content Include="font-awesome-4.1.0\css\font-awesome.css" />
     <Content Include="font-awesome-4.1.0\css\font-awesome.min.css" />
     <Content Include="font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
@@ -109,13 +108,6 @@
     <Content Include="testProcessing.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facebook.aspx.designer.vb">
-      <DependentUpon>Facebook.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Facebook.aspx.vb">
-      <DependentUpon>Facebook.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
