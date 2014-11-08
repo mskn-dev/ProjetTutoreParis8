@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="Twitter" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="twitter.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="css/twitter.css" rel="stylesheet" />
     <script src="js/twitter.js"></script>
-    <script src="js/twitterGoogleMap.js"></script>
+    <script src="js/twitterProcessing.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMain" runat="server">
     
@@ -77,13 +78,32 @@
             <!-- /.row -->
         </div>
         <div class="clear"></div>
-        <div id="tweetsResultPanel" class="displayNone panel panel-info">
+        <%--<div id="tweetsResultPanel" class="displayNone panel panel-info">
             <div class="panel-body">
                 <div class="row">
                     <div id="content">
                     </div>
                 </div>
             </div>
+        </div>--%>
+        <div id="tweetsResultPanel" class="displayNone panel panel-default">
+	        <div class="panel-tab clearfix">
+		        <ul class="bg-info tab-bar">
+			        <li class="active"><a href="#vueBasique" data-toggle="tab"><i class="fa fa-twitter"></i> Vue Basique</a></li>
+			        <li class=""><a onclick="GetVueGraphique();" href="#vueGraphique" data-toggle="tab"><i class="fa fa-paint-brush"></i> Vue Graphique</a></li>
+		        </ul>
+	        </div>
+	        <div class="panel-body">
+		        <div class="tab-content">
+			        <div class="tab-pane fade active in" id="vueBasique">
+				
+			        </div>
+			        <div class="tab-pane fade" id="vueGraphique">
+				        <canvas width="900" height="900" class="col-md-12" id="vueGraphiqueCanvas"></canvas>
+			        </div>
+		        </div>
+	        </div>
         </div>
     </section>
+    
 </asp:Content>

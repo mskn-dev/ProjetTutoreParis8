@@ -2,14 +2,17 @@
     //GetTwitterData("from:psg_inside");
 });
 
+var twitterObj = new Object();
 
 function GetTwitterData(string) {
 
     var OK = function (result) {
         if (result.length == 0)
             alert("aucun résultat obtenu pour ce Tag ! ");
-        else
+        else{
+            twitterObj = result;
             setTweetsOnPanel(result);
+        }
     }
 
     var KO = function (result) {
@@ -54,7 +57,7 @@ function validerRechercheTag(inputVal, checkedRadio) {
 
 function setTweetsOnPanel(obj) {
     var tweets = obj;
-    var $tweetPanel = $("#tweetsResultPanel").find("#content");
+    var $tweetPanel = $("#tweetsResultPanel").find(".tab-content").find("#vueBasique");
     $tweetPanel.html("");
 
     for (var i = 0; i < tweets.length;i++){
@@ -67,9 +70,21 @@ function setTweetsOnPanel(obj) {
         $($tweetModele).find("#tweetBody").append(tweets[i].tweetText);
         if (tweets[i].isRetweeted)
             $($tweetModele).find("#tweetButtons").append("<i class='fa fa-retweet text-success'></i> <span class='text-success'>Retweeté " + tweets[i].retweetCount + " fois");
-        $($tweetModele).find("#tweetButtons").append("<span class='pull-right text-info' style='cursor:pointer;' onclick='tweetGeoloc(" + tweets[i].tweetLong + "," + tweets[i].tweetLat + ");'>Géolocaliser le tweet <i class='fa fa-globe'></i></span>");
+        if (tweets[i].tweetLong > 0 || tweets[i].tweetLat >0)
+            $($tweetModele).find("#tweetButtons").append("<span class='pull-right text-info' style='cursor:pointer;' onclick='tweetGeoloc(" + tweets[i].tweetLong + "," + tweets[i].tweetLat + ");'>Géolocaliser le tweet <i class='fa fa-globe'></i></span>");
         $($tweetModele).removeClass("displayNone");
         $($tweetPanel).append($tweetModele);
     }
     $("#tweetsResultPanel").fadeIn('slow');
+}
+
+function GetVueGraphique() {
+    var canvas = document.getElementById("vueGraphiqueCanvas");
+    // attaching the sketchProc function to the canvas
+    var p = new Processing(canvas, sketchProc);
+    // p.exit(); to detach it
+}
+
+function getTwitterObj() {
+    return twitterObj;
 }

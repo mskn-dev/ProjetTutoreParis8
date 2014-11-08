@@ -24,14 +24,14 @@
         <!-- Bootstrap Core JavaScript -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
       
-        <%--<!-- Two.js -->
+        <!-- Two.js -->
         <script type="text/javascript" src="js/two.js"></script>
 
         <!-- Three.js -->
         <script type="text/javascript" src="js/three.js"></script>
         
         <!-- Processing.js -->
-        <script type="text/javascript" src="js/processing.js"></script>--%>
+        <script type="text/javascript" src="js/processing.js"></script>
         
         <!-- AjaxCall.js -->
         <script type="text/javascript" src="js/AjaxCall.js"></script>
