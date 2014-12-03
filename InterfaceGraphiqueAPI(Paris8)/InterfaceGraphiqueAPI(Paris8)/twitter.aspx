@@ -1,11 +1,11 @@
 ﻿<%@ Page Title="Twitter" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="twitter.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/twitter.css" rel="stylesheet" />
+    <script src="js/twitterDatGui.js"></script>
     <script src="js/twitter.js"></script>
     <script src="js/twitterProcessing.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMain" runat="server">
-    
     <div id="tweetsModele" class="displayNone row col-md-12 no-margin">
         <div class="panel panel-default">
             <div class="panel-body">
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <section class="col-md-9" id="twitter">
+    <section class="col-md-9 mt-10" id="twitter">
         <div class="panel panel-default">
             <div class="panel-body">
                 <div class="row">
