@@ -4,7 +4,9 @@
 .inlineB{display:inline-block !important;}
 .displayNone{display:none;}
 
-#sidebar-perso-wrapper {
+#vueGraphiqueY{background: rgb(169, 68, 66);}
+
+#sidebar-twitter-wrapper {
     z-index: 1000;
     /*position: fixed;*/
     left: 0;
@@ -20,6 +22,21 @@
     transition: all 0.4s ease 0s;
 }
 
+#sidebar-youtube-wrapper {
+    z-index: 1000;
+    /*position: fixed;*/
+    left: 0;
+    /*width: 250px;*/
+    height: 100%;
+    /*margin-right: -250px;*/
+    overflow-y: auto;
+    background: rgb(219, 38, 36);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
 
 /*Couleurs*/
 .bg-danger{background:#a94442;}

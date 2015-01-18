@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="index" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script type="text/javascript" src="js/index.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMain" runat="server">
     <!-- Navigation -->
@@ -16,10 +15,13 @@
                 <a href="#top">Acceuil</a>
             </li>
             <li>
-                <a href="twitter.aspx"><i class="text-white fa fa-twitter"></i> Twitter API</a>
+                <a href="../twitter.aspx"><i class="text-white fa fa-twitter"></i> Twitter API</a>
             </li>
             <li>
-                <a href="facebook.aspx"><i class="text-white fa fa-facebook-square"></i> Facebook API</a>
+                <a href="../youTube.aspx"><i class="text-white fa fa-youtube"></i> Youtube API</a>
+            </li>
+            <li>
+                <a href="../facebook.aspx"><i class="text-white fa fa-facebook-square"></i> Facebook API</a>
             </li>
             <li>
                 <a href="#about">Objectif du projet</a>
@@ -52,7 +54,6 @@
                 <h1> <b>Departement</b> <span class="text-danger">Hypermédia</span></h1>
                 <h2> <b>interface graphique utilisateur et APIs</b></h2>
                 <br/>
-                <%-- <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>--%>
             </div>
         </div>
     </header>
@@ -189,11 +190,6 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- Map -->
-   <%-- <section id="contact" class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2620.4150132356062!2d2.3625490000000005!3d48.945583000000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6695017810e3d%3A0x95196baf9263e53a!2sUniversit%C3%A9+Paris+8+Vincennes-Saint-Denis!5e0!3m2!1sfr!2sfr!4v1414536716193" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
-    </section>--%>
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -226,5 +222,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="../js/index.js"></script>
 </asp:Content>
 

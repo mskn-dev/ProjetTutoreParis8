@@ -19,32 +19,32 @@
     
      <%--------------------------------------------------- ------- JavasCript ----------------------------------------------------%>
         <!-- jQuery Version 1.11.0 -->
-        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
         
-        <!-- dat.Gui -->
-        <script type="text/javascript" src="js/dat.gui.min.js"></script>
-
         <!-- Bootstrap Core JavaScript -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <%-- JCaroussel --%>
+        <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
+
+        <!-- dat.Gui -->
+        <script type="text/javascript" src="../js/dat.gui.min.js"></script>
       
         <!-- Two.js -->
-        <script type="text/javascript" src="js/two.js"></script>
+        <script type="text/javascript" src="../js/two.js"></script>
 
-        <!-- Three.js -->
-        <script type="text/javascript" src="js/three.js"></script>
         
         <!-- Processing.js -->
-        <script type="text/javascript" src="js/processing.js"></script>
+        <script type="text/javascript" src="../js/processing.js"></script>
         
         <!-- AjaxCall.js -->
-        <script type="text/javascript" src="js/AjaxCall.js"></script>
+        <script type="text/javascript" src="../js/AjaxCall.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-     <%If Page.Title <> "index" Then%>
-        <nav class="col-md-3 active" id="sidebar-perso-wrapper">
+     <%If Page.Title = "Twitter" Then%>
+        <nav class="col-md-3 active" id="sidebar-twitter-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#"><span class="text-white"><%=Page.Title%></span></a>
@@ -54,6 +54,18 @@
                 </li>
             </ul>
         </nav>
+ <%--   <%ElseIf Page.Title = "YouTube" Then%>
+         <nav class="col-md-3 active" id="sidebar-youtube-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#"><span class="text-white"><%=Page.Title%></span></a>
+                </li>
+                <li>
+                    <a href="index.aspx/#top"><span class="text-white">Acceuil</span></a>
+                </li>
+            </ul>
+        </nav>--%>
+
     <%End If%>
     <asp:ContentPlaceHolder ID="ContentMain" runat="server">  
     </asp:ContentPlaceHolder>

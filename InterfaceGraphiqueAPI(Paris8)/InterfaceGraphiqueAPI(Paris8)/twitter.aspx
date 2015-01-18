@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Twitter" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="twitter.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/twitter.css" rel="stylesheet" />
-    <script src="js/twitterDatGui.js"></script>
+    <%--<script src="js/twitterDatGui.js"></script>--%>
     <script src="js/twitter.js"></script>
     <script src="js/twitterProcessing.js"></script>
 </asp:Content>
@@ -99,7 +99,7 @@
 				
 			        </div>
 			        <div class="tab-pane fade" id="vueGraphique">
-				        <canvas width="900" height="900" class="col-md-12" id="vueGraphiqueCanvas"></canvas>
+				        <canvas class="col-md-12" id="vueGraphiqueCanvas"></canvas>
 			        </div>
 		        </div>
 	        </div>
