@@ -1,4 +1,4 @@
-﻿<%@ Page Title="index" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.index" %>
+﻿<%@ Page Title="Index" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="InterfaceGraphiqueAPI_Paris8_.index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -18,10 +18,10 @@
                 <a href="../twitter.aspx"><i class="text-white fa fa-twitter"></i> Twitter API</a>
             </li>
             <li>
-                <a href="../youTube.aspx"><i class="text-white fa fa-youtube"></i> Youtube API</a>
+                <a href="../videosAPI.aspx"><i class="text-white fa fa-youtube fa-vimeo-square"></i> Videos API</a>
             </li>
             <li>
-                <a href="../facebook.aspx"><i class="text-white fa fa-facebook-square"></i> Facebook API</a>
+                <a href="../facebook.aspx"><i class="text-white fa fa-instagram"></i> Instgram API</a>
             </li>
             <li>
                 <a href="#about">Objectif du projet</a>
@@ -161,24 +161,24 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x text-white"></i>
-                                <i class="fa fa-facebook-square fa-stack-1x"></i>
+                                <i class="fa fa-instagram fa-stack-1x"></i>
                             </span>
                                 <h4>
-                                    <strong>Facebook</strong>
+                                    <strong>Instagram</strong>
                                 </h4>
-                                <p>L'API Facebook, permet d'accéder aux données d'un compte en particulier, les amis, les posts, ...</p>
+                                <p>L'API Instagram, permet différentes images, par mots clés, nom d'utilisateur, ...</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-7">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x text-white"></i>
-                                    <i class="fa fa-google fa-stack-1x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x"></i>
                                 </span>
                                 <h4>
-                                    <strong>Google Map</strong>
+                                    <strong>Videos APIs</strong>
                                 </h4>
-                                <p>L'API google Map donnent des possibilités infinis : géolocalisation des tweets, des posts Facebook, affichage sur la carte des utilisateurs, .....</p>
+                                <p>3 APIs : Youtube, DailyMotion et Vimeo, permettent de rechercher plusieurs vidéos, et les visualiser.</p>
                             </div>
                         </div>
                     </div>

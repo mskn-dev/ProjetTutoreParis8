@@ -22,19 +22,37 @@
         <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
         
         <!-- Bootstrap Core JavaScript -->
-        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/theme/bootstrap.min.js"></script>
         <%-- JCaroussel --%>
-        <script type="text/javascript" src="../js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="../js/theme/jquery.jcarousel.min.js"></script>
+
+        <!-- endless -->
+        <script type="text/javascript" src="../js/theme/endless.js"></script>
+        
+        <%-- Cookie --%>
+        <script type="text/javascript" src="../js/theme/jquery.cookie.min.js"></script>    
+        
+        <%-- popUpOverlay --%>
+        <script type="text/javascript" src="js/theme/popupoverlay.min.js"></script>    
+        
+        <%-- SlimScroll --%>
+        <script type="text/javascript" src="js/theme/slimscroll.js"></script>
+        
+        <%-- Modernizr --%>
+        <script type="text/javascript" src="js/theme/modernizr.min.js"></script>
+        
+        <%-- Pace --%>
+        <script type="text/javascript" src="js/theme/pace.min.js"></script>
 
         <!-- dat.Gui -->
-        <script type="text/javascript" src="../js/dat.gui.min.js"></script>
+        <script type="text/javascript" src="../js/3d/dat.gui.min.js"></script>
       
         <!-- Two.js -->
-        <script type="text/javascript" src="../js/two.js"></script>
+        <script type="text/javascript" src="../js/3d/two.js"></script>
 
         
         <!-- Processing.js -->
-        <script type="text/javascript" src="../js/processing.js"></script>
+        <script type="text/javascript" src="../js/3d/processing.js"></script>
         
         <!-- AjaxCall.js -->
         <script type="text/javascript" src="../js/AjaxCall.js"></script>
@@ -43,29 +61,17 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-     <%If Page.Title = "Twitter" Then%>
-        <nav class="col-md-3 active" id="sidebar-twitter-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#"><span class="text-white"><%=Page.Title%></span></a>
-                </li>
-                <li>
-                    <a href="index.aspx/#top"><span class="text-white">Acceuil</span></a>
-                </li>
-            </ul>
-        </nav>
- <%--   <%ElseIf Page.Title = "YouTube" Then%>
-         <nav class="col-md-3 active" id="sidebar-youtube-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#"><span class="text-white"><%=Page.Title%></span></a>
-                </li>
-                <li>
-                    <a href="index.aspx/#top"><span class="text-white">Acceuil</span></a>
-                </li>
-            </ul>
-        </nav>--%>
-
+     <%If Page.Title <> "Index" Then
+             If Page.Title = "Twitter" Then%>
+                 <div id="top-nav" class="twitter fixed skin-6">
+             <%Else If Page.Title = "videosAPI" then%>
+                <div id="top-nav" class="youtube fixed skin-6">
+            <%End If%>   
+			<a href="index.aspx" class="brand">
+				<span>Accueil</span>
+				<span class="text-toggle">THYP</span>
+			</a><!-- /brand -->					
+		</div>
     <%End If%>
     <asp:ContentPlaceHolder ID="ContentMain" runat="server">  
     </asp:ContentPlaceHolder>
