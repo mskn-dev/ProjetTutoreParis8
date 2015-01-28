@@ -107,7 +107,7 @@
                             <div class="col-md-12" id="vis"></div>
                             <div class="clear" id="status"></div>
                             <div class=" col-md-6 panel panel-default" id="controls">
-                                <div id="titreGigue" class="panel panel-heading">Gigue</div>
+                                <div id="titreGigue" class="panel panel-heading">Sensibilité</div>
                                 <div class="panel panel-body" id="jitter" oninput="output.value = (jitter_input.value / 200).toFixed(3)" >
                                    <%-- <input id="jitter_input" type="range" min="0" max="400" value="100" style="width:240px;">
                                     <output name="output" for="input">0.5</output>--%>

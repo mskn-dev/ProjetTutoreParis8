@@ -43,7 +43,7 @@ function sketchProc(processing) {
             tweet = twitterObj[i];
             processing.textMode(processing.SCREEN);
             processing.textSize(processing.random(50), processing.random(100), processing.P2D);
-            processing.text(tweet.tweetText, x, y);
+            processing.text(tweet.userName, x, y);
             processing.fill(processing.random(255), processing.random(255), processing.random(255), processing.random(255));
             
         }

@@ -4,7 +4,7 @@ root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
 Bubbles = function () {
     var chart, clear, click, collide, collisionPadding, connectEvents, data, force, gravity, hashchange, height, idValue, jitter, label, margin, maxRadius, minCollisionRadius, mouseout, mouseover, node, rScale, rValue, textValue, tick, transformData, update, updateActive, updateLabels, updateNodes, width;
-    width = 770//$("#vueD3").innerWidth();
+    width = parseInt($("#vueD3").innerWidth()) * 2;
     height = 500//$("#vueD3").innerHeight();
     data = [];
     node = null;
