@@ -94,6 +94,11 @@ span.dailymotion{color:rgb(0, 102, 166);}
 #top-nav.twitter{
     background-color : #55acee;
 }
+
+#top-nav.instagram{
+    background-color : rgb(60, 106, 145);
+}
+
 #top-nav.fixed {
   position: fixed;
   left: 0;

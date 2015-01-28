@@ -70,11 +70,22 @@
                  <div id="top-nav" class="twitter fixed skin-6">
              <%Else If Page.Title = "videosAPI" then%>
                 <div id="top-nav" class="youtube fixed skin-6">
+            <%ElseIf Page.Title = "InstagramC" or Page.Title = "InstagramG" Then%>
+                <div id="top-nav" class="instagram fixed skin-6">
             <%End If%>   
 			<a href="index.aspx" class="brand">
 				<span>Accueil</span>
 				<span class="text-toggle">THYP</span>
 			</a><!-- /brand -->					
+                <%If Page.Title = "InstagramC" Then%>
+                    <a href="InstagramG.aspx" class="brand">
+				        <span class="text-toggle">Vue Graphique</span>
+			        </a><!-- /brand -->
+                <%ElseIf Page.Title = "InstagramG" Then%>
+                    <a href="InstagramC.aspx" class="brand">
+				        <span class="text-toggle">Vue Classique</span>
+			        </a><!-- /brand -->
+                <%End If%>
 		</div>
     <%ElseIf Page.Title = "Index" Then%>
         <div id="top-nav" class="index fixed skin-6">
@@ -102,7 +113,7 @@
                             <a href="../videosAPI.aspx"><i class="text-danger fa fa-youtube fa-vimeo-square"></i> Videos API</a>
                         </li>
                         <li>
-                            <a href="../facebook.aspx"><i class="text-danger fa fa-instagram"></i> Instgram API</a>
+                            <a href="../InstagramC.aspx"><i class="text-danger fa fa-instagram"></i> Instgram API</a>
                         </li>
                         <li>
                             <a href="#about">Objectif du projet</a>
