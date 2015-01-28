@@ -149,26 +149,26 @@ function getYoutubeVideos() {
 }
 
 
-function getVimeoVideos() {
+//function getVimeoVideos() {
     
-    var videos = new Array();
-    var tag = getTag();
+//    var videos = new Array();
+//    var tag = getTag();
 
-    var jsonURL = "https://api.vimeo.com/?access_token=05cf265f1ca883636f9a4976c4bccdfc"//;'https://vimeo.com/api/rest/v2?method=vimeo.videos.search&query=';
-    //var formatJSON = '&access_token=05cf265f1ca883636f9a4976c4bccdfc&format=json';
+//    var jsonURL = "https://api.vimeo.com/?access_token=05cf265f1ca883636f9a4976c4bccdfc"//;'https://vimeo.com/api/rest/v2?method=vimeo.videos.search&query=';
+//    //var formatJSON = '&access_token=05cf265f1ca883636f9a4976c4bccdfc&format=json';
 
 
-    var adresseComplete = jsonURL; //+ tag + formatJSON;
+//    var adresseComplete = jsonURL; //+ tag + formatJSON;
 
-    $.getJSON(adresseComplete, function (data) {
-        onData(data);
-        $.each(data.feed.entry, function (i, video) {
-            var video = new YouTube(video);
-            videos.push(video);
-        });
-        setVideoOnPanel(videos);
-    });
-}
+//    $.getJSON(adresseComplete, function (data) {
+//        onData(data);
+//        $.each(data.feed.entry, function (i, video) {
+//            var video = new YouTube(video);
+//            videos.push(video);
+//        });
+//        setVideoOnPanel(videos);
+//    });
+//}
 
 function setVideoOnPanel(videos) {
     var youtubeModel;

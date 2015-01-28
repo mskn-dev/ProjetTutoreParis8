@@ -151,7 +151,7 @@
 		        //var tag;
 		        var inputVal = $("#Instafeed").val()
 		        //setFeed(inputVal); 
-		        location.replace("Instagram.aspx?tag=" + inputVal);
+		        location.replace("InstagramG.aspx?tag=" + inputVal);
 		    }
 
 		    function init() {
