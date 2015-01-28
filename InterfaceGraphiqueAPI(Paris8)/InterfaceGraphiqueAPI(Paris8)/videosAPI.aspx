@@ -12,7 +12,7 @@
 		</div>
 		<div class="theme-box">
 			<i onclick="changeApi(this);" class="active pointer col-md-4 fa fa-youtube" style="font-size:30px;color: rgb(169, 68, 66);" id="youtube-skin"></i>
-			<i onclick="changeApi(this);" class="pointer col-md-4 fa fa-vimeo-square" style="font-size:30px;color: rgb(23, 179, 232);"  id="vimeo-skin"></i>
+			<%--<i onclick="changeApi(this);" class="pointer col-md-4 fa fa-vimeo-square" style="font-size:30px;color: rgb(23, 179, 232);"  id="vimeo-skin"></i>--%>
 			<i onclick="changeApi(this);" class="text-center pointer col-md-4" id="dailymotion-skin"><img src="../img/dailymotion-logo.png" alt="dailymotion"></i>
 		</div>
 	</div>
