@@ -9,6 +9,8 @@ var Element = function (id,entry) {
     dom.style.width = 'inherit';
     dom.style.height = 'inherit';
 
+    $(dom).draggable();
+
     var image = document.createElement('img');
     image.style.position = 'absolute';
     image.style.width = '480px';
@@ -97,12 +99,13 @@ var Element = function (id,entry) {
         player.style.height = '360px';
         player.style.border = '0px';
         if (id == "youtube")
-            player.src = 'http://www.youtube.com/embed/' + entry.id.$t.split(':').pop() + '?rel=0&autoplay=1&controls=1&showinfo=0';
+            player.src = 'http://www.youtube.com/embed/' + entry.id.$t.split('/').pop() + '?rel=0&autoplay=1&controls=1&showinfo=0';
         else if (id == "dailymotion")
             player.src = 'http://www.dailymotion.com/embed/video/' + entry.id + '?api=true&autoplay=1&controls=1&showinfo=0';
         else if (id = "vimeo")
             player.src;
         
+        $(player).draggable();
         this.appendChild(player);
 
         //

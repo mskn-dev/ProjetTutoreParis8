@@ -3,50 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMain" runat="server">
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top">Projet Tuteuré </a>
-            </li>
-            <li>
-                <a href="#top">Acceuil</a>
-            </li>
-            <li>
-                <a href="../twitter.aspx"><i class="text-white fa fa-twitter"></i> Twitter API</a>
-            </li>
-            <li>
-                <a href="../videosAPI.aspx"><i class="text-white fa fa-youtube fa-vimeo-square"></i> Videos API</a>
-            </li>
-            <li>
-                <a href="../facebook.aspx"><i class="text-white fa fa-instagram"></i> Instgram API</a>
-            </li>
-            <li>
-                <a href="#about">Objectif du projet</a>
-            </li>
-            <li>
-                <a href="#services">Technologies</a>
-            </li>
-            <li>
-                <a href="#api">APIs</a>
-            </li>
-            <%--<li>
-                <a href="testTwo.aspx">TestTwo</a>
-            </li>
-            <li>
-                <a href="testThree.aspx">TestThree</a>
-            </li>
-            <li>
-                <a href="testProcessing.aspx">TestProcessing</a>
-            </li>--%>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
+            
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
@@ -59,12 +16,12 @@
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about" class=" bg-black about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>interface graphique utilisateur et APIs</h2>
-                    <p class="lead">l’objectif est de réaliser la conception et le développement d'une interface utilisateur permettant l'exploration d'un API à travers un espace graphique interactive.</p>
+                    <h1 class="text-danger">Interface graphique utilisateur et APIs</h1>
+                    <p class=" text-white lead">l’objectif est de réaliser la conception et le développement d'une interface utilisateur permettant l'exploration d'un API à travers un espace graphique interactive.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -138,7 +95,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <section id="api" class="services bg-grey text-primary">
+    <section id="api" class="services bg-black text-danger">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -152,9 +109,9 @@
                                     <i class="fa fa-twitter fa-stack-1x"></i>
                                 </span>
                                 <h4>
-                                    <strong>Twitter</strong>
+                                    <strong class="text-white">Twitter</strong>
                                 </h4>
-                                <p>L'API twitter permet d'acceder à toutes les conversations se déroulant sur twitter. Les données des utilisateurs, leurs tweets, les replies, ...</p>
+                                <p class="text-white">L'API twitter permet d'acceder à toutes les conversations se déroulant sur twitter. Les données des utilisateurs, leurs tweets, les replies, ...</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-7">
@@ -163,10 +120,10 @@
                                 <i class="fa fa-circle fa-stack-2x text-white"></i>
                                 <i class="fa fa-instagram fa-stack-1x"></i>
                             </span>
-                                <h4>
+                                <h4 class="text-white">
                                     <strong>Instagram</strong>
                                 </h4>
-                                <p>L'API Instagram, permet différentes images, par mots clés, nom d'utilisateur, ...</p>
+                                <p class="text-white">L'API Instagram, permet différentes images, par mots clés, nom d'utilisateur, ...</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-7">
@@ -176,9 +133,9 @@
                                     <i class="fa fa-youtube fa-stack-1x"></i>
                                 </span>
                                 <h4>
-                                    <strong>Videos APIs</strong>
+                                    <strong class="text-white">Videos APIs</strong>
                                 </h4>
-                                <p>3 APIs : Youtube, DailyMotion et Vimeo, permettent de rechercher plusieurs vidéos, et les visualiser.</p>
+                                <p class="text-white">3 APIs : Youtube, DailyMotion et Vimeo, permettent de rechercher plusieurs vidéos, et les visualiser.</p>
                             </div>
                         </div>
                     </div>
@@ -195,7 +152,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>interface graphique utilisateur et APIs</strong>
+                    <h4 class="text-danger"><strong>interface graphique utilisateur et APIs</strong>
                     </h4>
                     <p>Mehdi AMASKANE<br/>Zineb SLAOUI</p>
                     <ul class="list-unstyled">

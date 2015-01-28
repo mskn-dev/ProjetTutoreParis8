@@ -1,5 +1,9 @@
 ﻿$(function () {
-    //GetTwitterData("from:psg_inside");
+    $("#dataChangeRadios").find('input').each(function () {
+        $(this).change(function () {
+            getD3View(twitterObj, "login")
+        });
+    })
 });
 
 var twitterObj = new Object();
@@ -78,13 +82,53 @@ function setTweetsOnPanel(obj) {
     $("#tweetsResultPanel").fadeIn('slow');
 }
 
-function GetVueGraphique() {
-    var canvas = document.getElementById("vueGraphiqueCanvas");
-    // attaching the sketchProc function to the canvas
-    var p = new Processing(canvas, sketchProc);
-    // p.exit(); to detach it
+function GetVueGraphique(param) {
+    if (param == 'processing') {
+        var canvas = document.getElementById("vueGraphiqueCanvas");
+        // attaching the sketchProc function to the canvas
+        var p = new Processing(canvas, sketchProc);
+        // p.exit(); to detach it
+    }
+    else if (param == 'd3') {
+
+        var twitterObj = new Object();
+        twitterObj = getTwitterObj();
+
+        getD3View(twitterObj,"tweet");
+    }
+    
 }
 
 function getTwitterObj() {
     return twitterObj;
+}
+
+function d3Object(tObject){
+    this.name = tObject;
+    this.word = tObject;
+    this.count = tObject.length;
+}
+
+function getD3View(twitterObj, param) {
+    if (param == "tweet") {
+        var d3Array = new Array();
+
+        for (var i = 0; i < twitterObj.length; i++) {
+            textTab = twitterObj[i].tweetText.split(" ");
+            for (var j = 0; j < textTab.length; j++) {
+                var d3 = new d3Object(textTab[j]);
+                d3Array.push(d3);
+            }
+        }
+        getD3Viz(d3Array);
+    }
+    else if (param == "login") {
+        var d3Array = new Array();
+
+        for (var i = 0; i < twitterObj.length; i++) {
+            var d3 = new d3Object(twitterObj[i].userName);
+                d3Array.push(d3);
+        }
+        getD3Viz(d3Array);
+    }
 }

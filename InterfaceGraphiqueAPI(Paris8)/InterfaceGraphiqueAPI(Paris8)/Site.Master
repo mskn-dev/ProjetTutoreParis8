@@ -13,13 +13,17 @@
         <link href="css/theme.css" rel="stylesheet"/>
         <link href="css/main.css" rel="stylesheet"/>
         <!-- Fonts Perso -->
-        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+ <%--       <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>--%>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
+        
+        <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet" />
    
     
      <%--------------------------------------------------- ------- JavasCript ----------------------------------------------------%>
         <!-- jQuery Version 1.11.0 -->
         <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="../js/theme/jquery-ui.min.js"></script>
         
         <!-- Bootstrap Core JavaScript -->
         <script type="text/javascript" src="../js/theme/bootstrap.min.js"></script>
@@ -71,6 +75,59 @@
 				<span>Accueil</span>
 				<span class="text-toggle">THYP</span>
 			</a><!-- /brand -->					
+		</div>
+    <%ElseIf Page.Title = "Index" Then%>
+        <div id="top-nav" class="index fixed skin-6">
+            <a href="index.aspx" class="brand">
+				<span>Accueil</span>
+				<span class="text-toggle">THYP</span>
+			</a><!-- /brand -->	
+		
+            <ul class="nav-notification clearfix">
+				<li class="profile dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<i style="font-size: 19px;" class="text-danger fa fa-bars"></i>
+					</a>
+					<ul class="dropdown-menu">
+					    <li class="sidebar-brand">
+                            <a href="#top">Projet Tuteuré </a>
+                        </li>
+                        <li>
+                            <a href="#top">Acceuil</a>
+                        </li>
+                        <li>
+                            <a href="../twitter.aspx"><i class="text-danger fa fa-twitter"></i> Twitter API</a>
+                        </li>
+                        <li>
+                            <a href="../videosAPI.aspx"><i class="text-danger fa fa-youtube fa-vimeo-square"></i> Videos API</a>
+                        </li>
+                        <li>
+                            <a href="../facebook.aspx"><i class="text-danger fa fa-instagram"></i> Instgram API</a>
+                        </li>
+                        <li>
+                            <a href="#about">Objectif du projet</a>
+                        </li>
+                        <li>
+                            <a href="#services">Technologies</a>
+                        </li>
+                        <li>
+                            <a href="#api">APIs</a>
+                        </li>
+                        <li>
+                            <a href="testTwo.aspx">TestTwo</a>
+                        </li>
+                        <li>
+                            <a href="testThree.aspx">TestThree</a>
+                        </li>
+                        <li>
+                            <a href="testProcessing.aspx">TestProcessing</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+				</li>
+			</ul>
 		</div>
     <%End If%>
     <asp:ContentPlaceHolder ID="ContentMain" runat="server">  

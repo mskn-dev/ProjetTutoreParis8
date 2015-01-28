@@ -88,22 +88,59 @@
         </div>--%>
         <div id="tweetsResultPanel" class="displayNone panel panel-default">
 	        <div class="panel-tab clearfix">
-		        <ul class="bg-info tab-bar">
+		        <ul class="bg-twitter tab-bar">
 			        <li class="active"><a href="#vueBasique" data-toggle="tab"><i class="fa fa-twitter"></i> Vue Basique</a></li>
-			        <li class=""><a onclick="GetVueGraphique();" href="#vueGraphique" data-toggle="tab"><i class="fa fa-paint-brush"></i> Vue Graphique</a></li>
-		        </ul>
+			        <li class=""><a onclick="GetVueGraphique('processing');" href="#vueProcessing" data-toggle="tab"><i class="fa fa-paint-brush"></i> Vue Processing.js</a></li>
+		             <li class=""><a onclick="GetVueGraphique('d3');" href="#vueD3" data-toggle="tab"><i class="fa fa-connectdevelop"></i> Vue D3.js</a></li>
+                </ul>
 	        </div>
 	        <div class="panel-body">
 		        <div class="tab-content">
 			        <div class="tab-pane fade active in" id="vueBasique">
 				
 			        </div>
-			        <div class="tab-pane fade" id="vueGraphique">
+			        <div class="tab-pane fade" id="vueProcessing">
 				        <canvas class="col-md-12" id="vueGraphiqueCanvas"></canvas>
+			        </div>
+                    <div class="tab-pane fade" id="vueD3">
+
+                            <div class="col-md-12" id="vis"></div>
+                            <div class="clear" id="status"></div>
+                            <div class=" col-md-6 panel panel-default" id="controls">
+                                <div id="titreGigue" class="panel panel-heading">Gigue</div>
+                                <div class="panel panel-body" id="jitter" oninput="output.value = (jitter_input.value / 200).toFixed(3)" >
+                                   <%-- <input id="jitter_input" type="range" min="0" max="400" value="100" style="width:240px;">
+                                    <output name="output" for="input">0.5</output>--%>
+                                    <p>
+                                      <label for="input"></label>
+                                      <input type="text" id="jitter_input" readonly style="border:0; color:#3C464E; font-weight:bold;">
+                                    </p>
+ 
+                                    <div id="jitter-div"></div>
+                                </div>
+                            </div>
+                            <div class=" col-md-6 panel panel-default" id="changeData">
+                                 <div class="control-group">
+                                  <div class="panel panel-heading bg-twitter">Changer les données</div>
+                                  <div id="dataChangeRadios" class="panel panel-body">
+                                    <label class="inlineB mr-30 radio inline" for="dataRadio-0">
+                                      <input type="radio" name="dataRadio" id="dataRadio-0" value="Tweets" checked="checked"/>
+                                      Tweets
+                                    </label>
+                                    <label class="inlineB mr-30 radio inline" for="dataRadio-1">
+                                      <input type="radio" name="dataRadio" id="dataRadio-1" value="Reçus par"/>
+                                      Logins
+                                    </label>
+                                  </div>
+                                </div>
+                            
+                            </div>
 			        </div>
 		        </div>
 	        </div>
         </div>
     </section>
-    
+    <script type="text/javascript" src="js/3d/d3.min.js"></script>
+    <script type="text/javascript" src="js/3d/coffee-script.js"></script>
+     <script type="text/javascript" src="js/twitterD3.js"></script>
 </asp:Content>
