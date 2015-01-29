@@ -41,22 +41,14 @@
 
     <section class="body">
     <div class="container">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<ul class="nav nav-pills">
-				<li class="active">
-					<a href="#">Explication</a>
-				</li>          			
-			</ul>
-		</div>
-	</div>
+	
 
       <div >
            <h1>INSTAGRAM API</h1>
       </div>
 
         <!--TEXT INPUT-->
-        <div class="control-group" style="margin-left: 362px;">
+        <div class="control-group" style="margin-left: 430px;">
             <label class="mr-10 control-label" for="Instafeed">Recherche :</label>
             <div class="inlineB controls">
                 <input id="Instafeed" name="instaTagsInput" type="text" placeholder="recherche" class="input-xlarge"/>

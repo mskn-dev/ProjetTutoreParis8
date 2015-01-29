@@ -71,8 +71,10 @@
              <%Else If Page.Title = "videosAPI" then%>
                 <div id="top-nav" class="youtube fixed skin-6">
             <%ElseIf Page.Title = "InstagramC" or Page.Title = "InstagramG" Then%>
-                <div id="top-nav" class="instagram fixed skin-6">
-            <%End If%>   
+                <div id="top-nav" class="instagram fixed skin-6"> 
+            <%ElseIf Page.Title = "FlickrC" or Page.Title = "FlickrG" Then%>
+                <div id="top-nav" class="flickr fixed skin-6">
+            <%End If%>    
 			<a href="index.aspx" class="brand">
 				<span>Accueil</span>
 				<span class="text-toggle">THYP</span>
@@ -83,6 +85,14 @@
 			        </a><!-- /brand -->
                 <%ElseIf Page.Title = "InstagramG" Then%>
                     <a href="InstagramC.aspx" class="brand">
+				        <span class="text-toggle">Vue Classique</span>
+			        </a><!-- /brand -->
+                     <%ElseIf Page.Title = "FlickrC" Then%>
+                    <a href="FlickrG.aspx" class="brand">
+				        <span class="text-toggle">Vue Graphique</span>
+			        </a><!-- /brand -->
+                <%ElseIf Page.Title = "FlickrG" Then%>
+                    <a href="FlickrC.aspx" class="brand">
 				        <span class="text-toggle">Vue Classique</span>
 			        </a><!-- /brand -->
                 <%End If%>
@@ -114,6 +124,9 @@
                         </li>
                         <li>
                             <a href="../InstagramC.aspx"><i class="text-danger fa fa-instagram"></i> Instgram API</a>
+                        </li>
+                        <li>
+                            <a href="../FlickrC.aspx"><i class="text-danger fa fa-flickr"></i> Flickr API</a>
                         </li>
                         <li>
                             <a href="#about">Objectif du projet</a>
