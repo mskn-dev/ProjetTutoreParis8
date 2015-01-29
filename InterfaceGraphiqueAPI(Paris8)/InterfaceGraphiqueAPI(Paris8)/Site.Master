@@ -13,45 +13,137 @@
         <link href="css/theme.css" rel="stylesheet"/>
         <link href="css/main.css" rel="stylesheet"/>
         <!-- Fonts Perso -->
-        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+ <%--       <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>--%>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
+        
+        <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet" />
    
     
      <%--------------------------------------------------- ------- JavasCript ----------------------------------------------------%>
         <!-- jQuery Version 1.11.0 -->
-        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-
+        <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="../js/theme/jquery-ui.min.js"></script>
+        
         <!-- Bootstrap Core JavaScript -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      
-        <%--<!-- Two.js -->
-        <script type="text/javascript" src="js/two.js"></script>
+        <script type="text/javascript" src="../js/theme/bootstrap.min.js"></script>
+        <%-- JCaroussel --%>
+        <script type="text/javascript" src="../js/theme/jquery.jcarousel.min.js"></script>
 
-        <!-- Three.js -->
-        <script type="text/javascript" src="js/three.js"></script>
+        <!-- endless -->
+        <script type="text/javascript" src="../js/theme/endless.js"></script>
+        
+        <%-- Cookie --%>
+        <script type="text/javascript" src="../js/theme/jquery.cookie.min.js"></script>    
+        
+        <%-- popUpOverlay --%>
+        <script type="text/javascript" src="js/theme/popupoverlay.min.js"></script>    
+        
+        <%-- SlimScroll --%>
+        <script type="text/javascript" src="js/theme/slimscroll.js"></script>
+        
+        <%-- Modernizr --%>
+        <script type="text/javascript" src="js/theme/modernizr.min.js"></script>
+        
+        <%-- Pace --%>
+        <script type="text/javascript" src="js/theme/pace.min.js"></script>
+
+        <!-- dat.Gui -->
+        <script type="text/javascript" src="../js/3d/dat.gui.min.js"></script>
+      
+        <!-- Two.js -->
+        <script type="text/javascript" src="../js/3d/two.js"></script>
+
         
         <!-- Processing.js -->
-        <script type="text/javascript" src="js/processing.js"></script>--%>
+        <script type="text/javascript" src="../js/3d/processing.js"></script>
         
         <!-- AjaxCall.js -->
-        <script type="text/javascript" src="js/AjaxCall.js"></script>
+        <script type="text/javascript" src="../js/AjaxCall.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-     <%If Page.Title <> "index" Then%>
-        <nav class="active" id="sidebar-perso-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#"><span class="text-white"><%=Page.Title%></span></a>
-                </li>
-                <li>
-                    <a href="index.aspx/#top"><span class="text-white">Acceuil</span></a>
-                </li>
-            </ul>
-        </nav>
-    <div class="clear"></div>
+     <%If Page.Title <> "Index" Then
+             If Page.Title = "Twitter" Then%>
+                 <div id="top-nav" class="twitter fixed skin-6">
+             <%Else If Page.Title = "videosAPI" then%>
+                <div id="top-nav" class="youtube fixed skin-6">
+            <%ElseIf Page.Title = "InstagramC" or Page.Title = "InstagramG" Then%>
+                <div id="top-nav" class="instagram fixed skin-6"> 
+            <%ElseIf Page.Title = "FlickrC" or Page.Title = "FlickrG" Then%>
+                <div id="top-nav" class="flickr fixed skin-6">
+            <%End If%>    
+			<a href="index.aspx" class="brand">
+				<span>Accueil</span>
+				<span class="text-toggle">THYP</span>
+			</a><!-- /brand -->					
+                <%If Page.Title = "InstagramC" Then%>
+                    <a href="InstagramG.aspx" class="brand">
+				        <span class="text-toggle">Vue Graphique</span>
+			        </a><!-- /brand -->
+                <%ElseIf Page.Title = "InstagramG" Then%>
+                    <a href="InstagramC.aspx" class="brand">
+				        <span class="text-toggle">Vue Classique</span>
+			        </a><!-- /brand -->
+                     <%ElseIf Page.Title = "FlickrC" Then%>
+                    <a href="FlickrG.aspx" class="brand">
+				        <span class="text-toggle">Vue Graphique</span>
+			        </a><!-- /brand -->
+                <%ElseIf Page.Title = "FlickrG" Then%>
+                    <a href="FlickrC.aspx" class="brand">
+				        <span class="text-toggle">Vue Classique</span>
+			        </a><!-- /brand -->
+                <%End If%>
+		</div>
+    <%ElseIf Page.Title = "Index" Then%>
+        <div id="top-nav" class="index fixed skin-6">
+            <a href="index.aspx" class="brand">
+				<span>Accueil</span>
+				<span class="text-toggle">THYP</span>
+			</a><!-- /brand -->	
+		
+            <ul class="nav-notification clearfix">
+				<li class="profile dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<i style="font-size: 19px;" class="text-danger fa fa-bars"></i>
+					</a>
+					<ul class="dropdown-menu">
+					    <li class="sidebar-brand">
+                            <a href="#top">Projet Tuteuré </a>
+                        </li>
+                        <li>
+                            <a href="#top">Acceuil</a>
+                        </li>
+                        <li>
+                            <a href="../twitter.aspx"><i class="text-danger fa fa-twitter"></i> Twitter API</a>
+                        </li>
+                        <li>
+                            <a href="../videosAPI.aspx"><i class="text-danger fa fa-youtube fa-vimeo-square"></i> Videos API</a>
+                        </li>
+                        <li>
+                            <a href="../InstagramC.aspx"><i class="text-danger fa fa-instagram"></i> Instgram API</a>
+                        </li>
+                        <li>
+                            <a href="../FlickrC.aspx"><i class="text-danger fa fa-flickr"></i> Flickr API</a>
+                        </li>
+                        <li>
+                            <a href="#about">Objectif du projet</a>
+                        </li>
+                        <li>
+                            <a href="#services">Technologies</a>
+                        </li>
+                        <li>
+                            <a href="#api">APIs</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+				</li>
+			</ul>
+		</div>
     <%End If%>
     <asp:ContentPlaceHolder ID="ContentMain" runat="server">  
     </asp:ContentPlaceHolder>

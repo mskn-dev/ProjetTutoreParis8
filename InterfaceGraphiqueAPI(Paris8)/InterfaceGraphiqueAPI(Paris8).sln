@@ -1,20 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InterfaceGraphiqueAPI(Paris8)", "InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8).vbproj", "{A8E19891-30A8-4C3A-87D9-46F1B03DDE86}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InterfaceGraphiqueAPI(Paris8)(1)", "http://localhost:60192", "{74F27139-FBAF-45A9-819F-54772B09DD59}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60192"
+		Debug.AspNetCompiler.PhysicalPath = "D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60192\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60192"
+		Release.AspNetCompiler.PhysicalPath = "D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60192\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "D:\Developpement\Projects\ProjetTutoreParis8\ProjetTutoreParis8\InterfaceGraphiqueAPI(Paris8)\InterfaceGraphiqueAPI(Paris8)\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A8E19891-30A8-4C3A-87D9-46F1B03DDE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8E19891-30A8-4C3A-87D9-46F1B03DDE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8E19891-30A8-4C3A-87D9-46F1B03DDE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8E19891-30A8-4C3A-87D9-46F1B03DDE86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F27139-FBAF-45A9-819F-54772B09DD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F27139-FBAF-45A9-819F-54772B09DD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

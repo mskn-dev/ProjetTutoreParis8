@@ -1,6 +1,7 @@
 ﻿Imports System.Web
 Imports System.Web.Services
 Imports System.Web.Services.Protocols
+Imports System.Collections.Generic
 
 ' Pour autoriser l'appel de ce service Web depuis un script à l'aide d'ASP.NET AJAX, supprimez les marques de commentaire de la ligne suivante.
 <System.Web.Script.Services.ScriptService()> _
@@ -37,7 +38,7 @@ Public Class TwitterData
     Private Property Credential As LinqToTwitter.ICredentialStore
     Private Property Auth As LinqToTwitter.PinAuthorizer
 
-    
+
 
     Public Sub New()
 
@@ -76,7 +77,7 @@ Public Class TwitterData
             For Each i In results(0).Statuses
                 Dim tweet As New Tweets
                 tweet.userName = i.User.Name
-                tweet.UserImg = i.User.ProfileImageUrl
+                tweet.userImg = i.User.ProfileImageUrl
                 tweet.tweetDate = i.CreatedAt
                 tweet.tweetText = i.Text
                 tweet.tweetLong = i.Coordinates.Longitude

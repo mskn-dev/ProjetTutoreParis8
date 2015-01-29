@@ -1,15 +1,22 @@
 ﻿$(function () {
-    //GetTwitterData("from:psg_inside");
+    $("#dataChangeRadios").find('input').each(function () {
+        $(this).change(function () {
+            getD3View(twitterObj, "login")
+        });
+    })
 });
 
+var twitterObj = new Object();
 
 function GetTwitterData(string) {
 
     var OK = function (result) {
         if (result.length == 0)
             alert("aucun résultat obtenu pour ce Tag ! ");
-        else
+        else{
+            twitterObj = result;
             setTweetsOnPanel(result);
+        }
     }
 
     var KO = function (result) {
@@ -54,7 +61,7 @@ function validerRechercheTag(inputVal, checkedRadio) {
 
 function setTweetsOnPanel(obj) {
     var tweets = obj;
-    var $tweetPanel = $("#tweetsResultPanel").find("#content");
+    var $tweetPanel = $("#tweetsResultPanel").find(".tab-content").find("#vueBasique");
     $tweetPanel.html("");
 
     for (var i = 0; i < tweets.length;i++){
@@ -67,9 +74,61 @@ function setTweetsOnPanel(obj) {
         $($tweetModele).find("#tweetBody").append(tweets[i].tweetText);
         if (tweets[i].isRetweeted)
             $($tweetModele).find("#tweetButtons").append("<i class='fa fa-retweet text-success'></i> <span class='text-success'>Retweeté " + tweets[i].retweetCount + " fois");
-        $($tweetModele).find("#tweetButtons").append("<span class='pull-right text-info' style='cursor:pointer;' onclick='tweetGeoloc(" + tweets[i].tweetLong + "," + tweets[i].tweetLat + ");'>Géolocaliser le tweet <i class='fa fa-globe'></i></span>");
+        if (tweets[i].tweetLong > 0 || tweets[i].tweetLat >0)
+            $($tweetModele).find("#tweetButtons").append("<span class='pull-right text-info' style='cursor:pointer;' onclick='tweetGeoloc(" + tweets[i].tweetLong + "," + tweets[i].tweetLat + ");'>Géolocaliser le tweet <i class='fa fa-globe'></i></span>");
         $($tweetModele).removeClass("displayNone");
         $($tweetPanel).append($tweetModele);
     }
     $("#tweetsResultPanel").fadeIn('slow');
+}
+
+function GetVueGraphique(param) {
+    if (param == 'processing') {
+        var canvas = document.getElementById("vueGraphiqueCanvas");
+        // attaching the sketchProc function to the canvas
+        var p = new Processing(canvas, sketchProc);
+        // p.exit(); to detach it
+    }
+    else if (param == 'd3') {
+
+        var twitterObj = new Object();
+        twitterObj = getTwitterObj();
+
+        getD3View(twitterObj,"tweet");
+    }
+    
+}
+
+function getTwitterObj() {
+    return twitterObj;
+}
+
+function d3Object(tObject){
+    this.name = tObject;
+    this.word = tObject;
+    this.count = tObject.length;
+}
+
+function getD3View(twitterObj, param) {
+    if (param == "tweet") {
+        var d3Array = new Array();
+
+        for (var i = 0; i < twitterObj.length; i++) {
+            textTab = twitterObj[i].tweetText.split(" ");
+            for (var j = 0; j < textTab.length; j++) {
+                var d3 = new d3Object(textTab[j]);
+                d3Array.push(d3);
+            }
+        }
+        getD3Viz(d3Array);
+    }
+    else if (param == "login") {
+        var d3Array = new Array();
+
+        for (var i = 0; i < twitterObj.length; i++) {
+            var d3 = new d3Object(twitterObj[i].userName);
+                d3Array.push(d3);
+        }
+        getD3Viz(d3Array);
+    }
 }
